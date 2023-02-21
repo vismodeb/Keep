@@ -1,0 +1,764 @@
+/* 
+  Template Name: Keep Landing Page
+  Template URI: https://example.com
+  Author Name: 
+  Author URI: https://
+  Version: 1.0.0
+  Description: This is figma to html
+  Tags: figma, html
+*/
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/* Default Css */
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html{
+  overflow-x: hidden;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+ul,ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  color: inherit;
+}
+button{
+  border: 0;
+  outline: 0;
+}
+img{
+  max-width: 100%;
+}
+.btn1{
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 16px;
+  transition: .3s ease;
+  padding: 10px 35px;
+}
+.btn1:hover{
+  background: #ffffff33;
+  color: #fff;
+}
+.btn2{
+  max-width: 250px;
+  margin: auto;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  display:block;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+  background: #70D87B;
+  color: #fff;
+  border-radius: 100px;
+  filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+  transition: all .5s ease;
+  cursor: pointer;
+}
+.btn2:hover{
+  color: #fff;
+  background-color: #20C997;
+  transform: scale(1.05);
+}
+/* Header Area Start
+---------------------------------- */
+.header-area {
+  background: #3d58da;
+  padding: 13px 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 999;
+}
+.header-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-nav .btn1{
+  display: none;
+}
+.header-nav nav ul{
+  display: flex;
+  align-items: center;
+}
+.header-nav nav ul li{
+  margin: 0 27px;
+}
+.header-nav nav ul li a{
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #fff;
+  /* transform: .3s; */
+}
+.header-nav nav ul li a:hover{
+  color: #fff;
+}
+.header-nav nav ul li a.active{
+  color: #fff !important;
+  background-color: transparent !important;
+  text-decoration: underline;
+}
+.active{
+  color: red;
+}
+.header-logo a img{
+  max-width: 175px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* For Mobile Menu Css */
+.mobile-menu {
+	position: absolute;
+	top: 35px;
+	left: 13%;
+  display: none;
+}
+#nav-icon4 {
+  width: 28px;
+  height: 23px;
+  position: relative;
+  margin: 0px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #FFF;
+  border-radius: 0px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+#nav-icon4 span:nth-child(2) {
+  top: 8px;
+  transform-origin: left center;
+}
+#nav-icon4 span:nth-child(3) {
+  top: 16px;
+  transform-origin: left center;
+}
+#nav-icon4.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -2px;
+  left: 2px;
+}
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+#nav-icon4.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 18px;
+  left: 2px;
+}
+/* Header Area End
+---------------------------------- */
+
+/* Banner Area Start
+---------------------------------- */
+.banner-area {
+  position: relative;
+  padding-top: 86px;
+}
+.banner-image object{
+  width: 100%;
+}
+.banner-btn{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform:translateX(-50%);
+  transition: all .5s ease;
+}
+.banner-area .btn2 {
+  height: 56px;
+  line-height: 56px;
+}
+.banner-area:hover .banner-btn{
+  transform:translateY(-15px) translateX(-50%);
+}
+.banner-btn .btn2{
+  margin-bottom: 15px;
+}
+
+.banner-btn p{
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 16px;
+  transition: all .3s ease;
+}
+.mobile-bg{
+  display: none;
+}
+/* Banner Area End
+---------------------------------- */
+
+/* Number Component Start
+---------------------------------- */
+.number-component{
+  padding-top: 100px;
+}
+.section-title{
+  text-align: center;
+  margin-bottom: 80px;
+}
+.section-title h2{
+  color: #394C62;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.section-title p{
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 450px;
+  margin: auto;
+  direction: rtl !important;
+}
+/* .section-title p span{
+  display: block;
+} */
+.content-wrapper{
+  max-width: 1050px;
+  width: 100%;
+  margin: auto;
+}
+.component-items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.component-items:hover .odd object{
+  transform: translateX(50px);
+}
+.component-items:hover .even object{
+  transform: translateX(-50px);
+}
+.component-number{
+  text-align: center;
+  width: 50%;
+}
+.component-number object{
+  max-width: 150px;
+  object-fit: contain;
+  transition:all 1s ease;
+}
+.component-right{
+  display: flex;
+  align-items: center;
+}
+.component-right-text{
+  text-align: right;
+  padding-right: 30px;
+}
+.component-right-text span{
+  text-transform: lowercase;
+}
+.component-right-text h4{
+  text-transform: uppercase;
+  color: #394C62;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.component-right-text p{
+  /* text-transform: uppercase; */
+  color: #394C62;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  max-width: 305px;
+  direction: rtl !important;
+}
+/* .component-right-text p span {
+  display: block;
+} */
+.component-right-image object {
+  width: 200px;
+}
+/* Number Component End
+------------------------------------- */
+
+/* Fanfac Area Start
+------------------------------------- */
+.fanfac-area{
+  padding-top: 100px;
+  position: relative;
+  z-index: 1;
+  overflow-x: clip;
+}
+.fanfac-area::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  background-image: url(../images/pricing-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -3;
+}
+.fanfac-item{
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+.fanfac-item p{
+  text-transform: uppercase;
+  color: #394C62;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.fanfac-item  h4{
+  text-transform: uppercase;
+  color: #5A8DEE;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 63px;
+}
+.fanfac-item .btn2{
+  filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.25));
+}
+.fanfac-item object{
+  max-width: 130px;
+  object-fit: contain;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.fanfac-item span{
+  text-transform: uppercase;
+  color: #A3AFBD;
+  font-weight: 400;
+  font-size: 16px;
+}
+.fanfac-title{
+  text-align: center;
+  padding-top: 100px;
+}
+.fanfac-title h2{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.fanfac-title p{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* fanfac-pricing */
+.fanfac-pricing{
+  max-width: 600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.pricing-item{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  padding:50px 20px;
+  box-sizing: border-box;
+  margin-bottom: 55px;
+  position: relative;
+}
+.pricing-item h4{
+  text-transform: uppercase;
+  color: #20C997;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+.pricing-item p{
+  text-transform: uppercase;
+  color: #394C62;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.pricing-number {
+  border-bottom: 4px solid #F2F3F7;
+  padding-bottom: 15px;
+  max-width: 427px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  transition: all 1s ease;
+}
+.pricing-number h2{
+  text-transform: uppercase;
+  color: #5A8DEE;
+  font-weight: 700;
+  font-size: 85px;
+  transition: all 1s ease;
+}
+.pricing-number h2 span{
+  color: #5A8DEE;
+  font-weight: 700;
+  font-size: 32px;
+}
+.pricing-number p{
+  text-transform: uppercase;
+  color: #5A8DEE;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 5px;
+  transition: all 1s ease;
+}
+.pricing-item:hover .pricing-number h2,
+.pricing-item:hover .pricing-number p{
+  transform: translateY(-10px);
+}
+
+.pricing-list {
+  text-align: right;
+  padding-right: 61px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.pricing-list ul li{
+  text-transform: uppercase;
+  color: #394C62;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.pricing-list ul li span{
+  text-transform: lowercase;
+}
+.pricing-list ul li object{
+  max-width: 40px;
+  width: 100%;
+  object-fit: contain;
+  margin-left: 11px;
+}
+.pricing-btn {
+  margin-bottom: -80px;
+}
+.pricing-btn .btn2{
+  background: #FD3E77;
+}
+.pricing-sample-text p{
+  text-transform: uppercase;
+  color: #A3AFBD;
+  font-weight: 400;
+  font-size: 14px;
+  max-width: 435px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  line-height: 26px;
+  direction: rtl !important;
+}
+/* .pricing-sample-text p span {
+  display: block;
+} */
+
+/* Pricing animation */
+.setting-animation {
+  position: absolute;
+  top: -64px;
+  right: -29%;
+}
+.rocket-animation object {
+  height: 665px;
+}
+.rocket-animation {
+  position: absolute;
+  top: 32%;
+  left: -162px;
+  z-index: -1;
+  transition: all .5s ease;
+}
+.pricing-item:hover .rocket-animation{
+  transform: translateX(-30px) translateY(-50px) scale(1.1);
+}
+.leaves-animation {
+  position: absolute;
+  top: 45%;
+  right: -125px;
+  z-index: -1;
+  transition: all .5s ease;
+}
+.pricing-item:hover .leaves-animation{
+  transform: translateX(10px) translateY(20px) scale(1.1);
+}
+.leaves-animation object{
+  height: 350px;
+}
+
+
+
+
+
+/* Fanfac Area End
+------------------------------------- */
+
+/* FAQ Area Start
+------------------------------------- */
+.content-wrapper{
+  max-width: 1050px;
+  width: 100%;
+  margin: auto;
+}
+.faq-main{
+  display: flex;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 40px 40px 80px 40px;
+  margin-bottom: 120px;
+  margin-top: 100px;
+}
+.faq-main .accordion-body {
+  direction: rtl !important;
+}
+.accordion-width{
+  max-width: 615px;
+  width: 100%;
+  text-align: right;
+}
+.accor-head{
+  width:100%;
+  overflow: hidden;
+}
+.accor-head span{
+  direction: rtl !important;
+}
+.faq-imgage{
+  margin-left: 30px;
+}
+.faq-imgage img{
+  object-fit: cover;
+  max-width: 255px;
+  width: 100%;
+  height: auto;
+}
+.accordion-width>h2{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #5A8DEE;
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
+.accordion-width .accordion-item{
+  overflow: hidden;
+}
+.accordion-width .accordion-item h2{
+  float: right;
+}
+.accordion-width .accordion-item h2 button{
+  padding: 10px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.accordion-width .accordion-button::after{
+  background-image: url(../images/plus.png);
+  margin-left: 15px;
+}
+.accordion-width .accordion-button:not(.collapsed)::after {
+  background-image: url(../images/minus.png);
+  margin-left: 15px;
+}
+.accordion-width .accordion-body p{
+  display: inline-block;
+}
+
+.faq-main .accordion-item {
+	background-color: #fff;
+	border: 0;
+}
+.faq-main .accordion-button{
+  text-align: right;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.faq-main .accordion-button:focus {
+	z-index: 3;
+	border-color: none;
+	outline: 0;
+	box-shadow: 0 0 0 0;
+}
+.faq-main .accordion-button:not(.collapsed) {
+	background-color: transparent !important ;
+	box-shadow: inset 0 0 0;
+}
+/* FAQ Area End
+------------------------------------- */
+
+/* Footer Area Start
+------------------------------------- */
+.footer-area{
+  background-image: url(../images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  position: relative;
+}
+.footer-area object{
+  position: absolute;
+  top: -108px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 164px;
+  height: 150px;
+  background-image: url(../images/keepy-footer.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.footer-area a img{
+  width: 100px;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+}
+.footer-area .p{
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 10px 0 20px 0;
+}
+.footer-area .btn1{
+  margin-bottom: 35px;
+}
+.footer-li ul {
+  display: flex;
+  align-items: center;
+  max-width: 472px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.footer-li ul li{
+  width: 100%;
+  text-align: center;
+}
+.footer-li ul li a {
+  font-size: 20px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: inline-block;
+  transition: all .3s ease-in;
+  text-align: center;
+}
+.footer-li ul li:hover a{
+  transform: scale(1.1);
+  border-bottom: 1px solid #fff;
+}
+.footer-li{
+  padding-bottom: 100px;
+  border-bottom: 1px solid #ffffff33;
+}
+
+.footer-bottom p:first-child{
+  max-width: 657px;
+  width: 100%;
+  margin: auto;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 15px 0;
+  direction: rtl !important;
+}
+.footer-bottom p:last-child{
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 35px;
+}
+
+/* Footer Area End
+------------------------------------- */
+.whatapp-btn{
+  position: fixed;
+  bottom: 50px;
+  left: 40px;
+  z-index: 9999;
+}
+.whatapp-btn a{
+  display: inline-block;
+}
+.whatapp-btn a img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}

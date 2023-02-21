@@ -1,0 +1,353 @@
+/* Max Width 1200 PX */
+@media all and (max-width: 1200px){
+  .component-right-text p span {
+    display: inline;
+  }
+	
+}
+/* Max Width 991 PX */
+@media all and (max-width: 991px){
+  .header-nav nav ul li {
+    margin: 0 10px;
+  }
+  .header-nav nav ul li a {
+    font-size: 20px;
+  }
+  .whatapp-btn {
+    bottom: 15px;
+    left: 20px;
+  }
+  .component-number object {
+    max-width: 100px;
+  }
+  .component-right-image object {
+    width: 150px;
+  }
+  .component-right-text h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .number-component {
+    padding-top: 80px;
+  }
+  .component-items{
+    margin-bottom: 30px;
+  }
+  .footer-li {
+    padding-bottom: 60px;
+  }
+  .footer-bottom p:last-child {
+    padding: 20px;
+  }
+  .banner-area .btn2 {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+  }
+
+}
+/* Min Width 768 PX */
+@media all and (min-width: 768px){
+	.header-nav nav ul{
+		display: flex !important;
+	}
+  .header-nav nav{
+    display: block !important;
+  }
+
+}
+/* Max Width 768 PX */
+@media all and (max-width: 767px){	
+	/* Mobile menu ----------------------------*/
+   .header-logo a img {
+      max-width: 140px;
+   }
+  .header-btn .btn1{
+    display: none;
+  }
+	.mobile-menu {
+		display: block;
+    top: 30px;
+    left: 10%;
+	}
+  .nav-pills .nav-link.active {
+    color: #000000 !important;
+  }
+  .nav-pills .nav-link:hover {
+    color: #000000 !important;
+  }
+  .header-menu{
+      position: relative;
+  }
+  .header-nav .btn1{
+    display: block;
+    background: #70D87B;
+    color: #fff;
+    max-width: 180px;
+    width: 100%;
+    margin: auto;
+    padding: 13px 35px;
+  }
+  .banner-area .btn2 {
+    height: 50px;
+    max-width: 180px;
+    line-height: 50px;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .header-nav nav{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding:40px 0;
+    box-sizing: border-box;
+    text-align: center;
+    display: none;
+  }
+  .header-nav nav ul {
+    flex-direction: column;
+  }
+  .header-nav nav ul li{
+      margin-bottom: 30px;
+  }
+  .header-nav nav ul li a {
+      color: #000000;
+  }
+  .header-button {
+      display: none;
+  }
+  .mobile-headerbtn{
+      display: block;
+  }
+  .header-button .btn {
+      padding: 8px 40px;
+      font-size: 20px;
+  }
+  .banner-area {
+    padding-top: 74px;
+  }
+  .whatapp-btn {
+    bottom: 10px;
+    left: 15px;
+  }
+  .component-items {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .component-items .even{
+    order: -1;
+  }
+  .number-component {
+    padding-top: 60px;
+  }
+  .fanfac-item  h4 {
+    font-size: 30px;
+    margin-bottom: 45px;
+  }
+  .fanfac-item p {
+    margin-bottom: 5px;
+  }
+  .fanfac-item {
+    padding-top: 60px;
+  }
+  .fanfac-area {
+    padding-top: 70px;
+  }
+  .pricing-item h4 {
+    font-size: 32px;
+  }
+  .pricing-number h2 {
+    font-size: 70px;
+  }
+  .pricing-number p {
+    margin-top: 0;
+  }
+  .pricing-list {
+    padding-right: 20px;
+  }
+  .pricing-list ul li {
+    margin-bottom: 17px;
+  }
+  .faq-main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .faq-area {
+    padding: 0 15px;
+  }
+  .footer-li {
+    padding-bottom: 40px;
+  }
+  .footer-area a img {
+    width: 80px;
+    margin-top: 27px;
+  }
+  .footer-area .p {
+    padding: 5px 0 18px 0;
+  }
+  .btn2 {
+    max-width: 200px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 20px;
+  }
+  .banner-area .btn2 {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    max-width: 115px;
+  }
+  .component-right-text p span {
+    display: block;
+  }
+ 
+}
+
+@media all and (max-width:575px){
+  .whatapp-btn {
+    bottom: 5px;
+    left: 7px;
+  }
+  .fanfac-area {
+    padding-top: 50px;
+  }
+  .fanfac-title h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  .fanfac-title p{
+    font-size: 18px;
+  }
+  .pricing-list {
+    padding-right: 10px;
+  }
+  .accordion-width > h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .accordion-width .accordion-item h2 {
+    line-height: 25px;
+  }
+  .accordion-width .accordion-item h2 button {
+    padding: 7px 0;
+  }
+  .mobile-menu {
+    left: 3%;
+	}
+  .banner-area .btn2 {
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    max-width: 100px;
+    font-weight: 500;
+  }
+}
+
+@media all and (max-width:450px){
+  .banner-area .btn2 {
+    max-width: 200px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 20px;
+  }
+  .banner-btn {
+    bottom: 32%;
+    width: 100%;
+  }
+  .banner-btn p {
+    text-shadow: 0px 0px 5px black;
+  }
+  .destop-bg{
+    display: none;
+  }
+  .mobile-bg{
+    display: block;
+  }
+  .component-right {
+    flex-direction: column;
+    text-align: center;
+  }
+  .component-right-text {
+    text-align: center;
+    padding-right: 0;
+  }
+  .component-right-image {
+    margin-top: 10px;
+  }
+  .component-number {
+    margin-bottom: 15px;
+  }
+  .component-right-text h4 {
+    margin-bottom: 12px;
+  }
+  .component-right-text p {
+    line-height: 28px;
+  }
+  .component-items {
+    margin-bottom: 40px;
+  }
+  .number-component {
+    padding-top: 45px;
+  }
+  .section-title {
+    margin-bottom: 50px;
+  }
+  .fanfac-item p {
+    font-size: 22px;
+  }
+  .fanfac-item  h4 {
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+  .fanfac-item object {
+    max-width: 100px;
+    margin-top: 20px;
+  }
+  .fanfac-item {
+    padding-top: 50px;
+  }
+  .pricing-list {
+    padding-right: 0;
+  }
+  .pricing-number h2 {
+    font-size: 60px;
+  }
+  .pricing-number {
+    margin-top: 20px;
+  }
+  .pricing-item h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .pricing-number h2 span {
+    font-size: 25px;
+  }
+  .pricing-number {
+    margin-top: 10px;
+  }
+  .pricing-list ul li object {
+    max-width: 30px;
+  }
+  .accordion-width>h2 {
+    line-height: 35px;
+  }
+  .faq-main {
+    padding: 40px 30px 50px 30px;
+  }
+  .footer-li ul li a {
+    font-size: 18px;
+  }
+  .footer-li {
+    padding-bottom: 30px;
+  }
+  .faq-main {
+    margin-bottom: 100px;
+  }
+  .pricing-sample-text p span {
+    display: inline;
+  }
+}
