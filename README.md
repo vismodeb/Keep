@@ -5,8 +5,8 @@
 Live Site Link:-https://vismodeb.github.io/keep/
 
 Used Packages / Technologies:-
-HTML
-CSS
-Bootstrap
-JavaScript
+HTML,
+CSS,
+Bootstrap,
+JavaScript,
 jQuery
